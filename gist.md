@@ -35,6 +35,9 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 ### Anchors
 
+^ is the start anchor thats asserts that the match must start at the beginning of the text. The ^ ensures that the email address  begins with the pattern specified in the regular expression. Conversly, $ is the end anchor that ensures the end of the email address ends with the pattern specified in the regular expression.
+
+
 ### Quantifiers
 
 ### OR Operator
