@@ -22,6 +22,17 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ is used to 
 
 ## Regex Components
 
+The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be broken into four components: ^ and $, ([a-z0-9_.-]+), ([\da-z.-]+), and ([a-z.]{2,6}).
+
+1. ^ and $ are anchors that go at the beginning and end of the text respectively
+
+2. ([a-z0-9_.-]+) captures the part of the email before the @ symbol. "a-z" matches lowercase letters between a and z. "0-9" matches any digits. (_), (.), and (-), match any underscores, periods, and hyphens. (+) is for if any of these characters are used more than once.
+
+3. ([\da-z.-]+) captures the domain after the @ symbol. "a-z" matches lowercase letters between a and z. "0-9" matches any digits. (_), and (.), match any underscores and periods.
+
+4. ([a-z.]{2,6}) matches the TLD (top-level domain) (eg. the com in ".com"). "a-z" matches lowercase letters between a and z and (.), match any periods. {2,6} specifies that the preceding character class should occur between 2 to 6 times.
+
+
 ### Anchors
 
 ### Quantifiers
