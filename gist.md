@@ -43,7 +43,14 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 ### OR Operator
 
+
 ### Character Classes
+
+*[a-z0-9_.-]: a through z (all lowercase letters), 0 through 9 (all digits), _ (underscore), . (period), - (hyphen)
+
+*[\da-z.-]: a through z (all lowercase letters), 0 through 9, (all digits), . (period), - (hyphen)
+
+*[a-z.]: a through z (all lowercase letters), . (period)
 
 
 ### Grouping and Capturing
