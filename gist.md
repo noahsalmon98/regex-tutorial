@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Regular Expression Tutorial
 
-Introductory paragraph (replace this with your text)
+A regular expression, often abbreviated as "regex", is a  pattern-matching language. Regex allows one to define a specific pattern or set of rules that can be used to validate strings or text data.
+
+
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ is used to validate email addresses by checking whether an inputed string follows the specific pattern to form a valid email address.
 
 ## Table of Contents
 
@@ -15,10 +17,8 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
 
 ## Regex Components
 
@@ -36,13 +36,9 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Bracket Expressions
 
-### Greedy and Lazy Match
 
 ### Boundaries
 
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
