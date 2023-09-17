@@ -57,6 +57,9 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 ### Bracket Expressions
 
+*[a-z0-9_.-], matches characters in the part of the email address before the "@" symbol
+*[\da-z.-], matches characters in the part of the email address after the "@" symbol, before the "."
+*[a-z.], matches any lowercase letter (a-z) or a period (.) within the TLD
 
 ### Boundaries
 
