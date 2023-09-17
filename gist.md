@@ -12,7 +12,6 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ is used to 
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
@@ -41,9 +40,6 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 + and {2,6} are quantifiers that are used when issues of mulitplicity or character minimums and maximums arise. + is used to match one or more occurrences of the preceding element (if a character is repeated it will be ok). {2,6} means that this section of the pattern will have a minimum of 2 characters and a maximum of 6 characters.
 
-### OR Operator
-
-
 ### Character Classes
 
 *[a-z0-9_.-]: a through z (all lowercase letters), 0 through 9 (all digits), _ (underscore), . (period), - (hyphen)
@@ -54,6 +50,14 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 
 ### Grouping and Capturing
+
+This regular expression is made up of three groups:
+
+1. ([a-z0-9_.-]+), matches one or more lowercase letters between a-z, numbers between 0-9, underscores, periods, and hyphens. The expression is then followed by an @ sign.
+
+2. ([\da-z.-]+) - the domain name must be matched which can use one or more digits, letters between a-z, periods, and hyphens. The domain name is then followed by a period.
+
+3. ([a-z.]{2,6}) - matches the TLD. This section looks for any group of letters or dots that are 2-6 characters long.
 
 ### Bracket Expressions
 
