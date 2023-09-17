@@ -16,6 +16,8 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ is used to 
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Boundaries](#boundaries)
+- [Author] (#author)
+
 
 
 ## Regex Components
