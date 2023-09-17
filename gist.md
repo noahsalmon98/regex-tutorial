@@ -14,7 +14,6 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ is used to 
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Boundaries](#boundaries)
@@ -40,11 +39,12 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 ### Quantifiers
 
++ and {2,6} are quantifiers that are used when issues of mulitplicity or character minimums and maximums arise. + is used to match one or more occurrences of the preceding element (if a character is repeated it will be ok). {2,6} means that this section of the pattern will have a minimum of 2 characters and a maximum of 6 characters.
+
 ### OR Operator
 
 ### Character Classes
 
-### Flags
 
 ### Grouping and Capturing
 
@@ -53,7 +53,9 @@ The regular expression /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/ can be brok
 
 ### Boundaries
 
+/^ and $/ ensure that the regex is only the code inbetween.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Noah Salmon. I am a student in a coding bootcamp. This is my GitHub: https://github.com/noahsalmon98
+
